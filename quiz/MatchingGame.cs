@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace quiz
 {
@@ -15,6 +16,7 @@ namespace quiz
         Label firstClicked = null,secondClicked=null;
         int timeSpent = 0;
         Random random = new Random();
+        SoundPlayer Won = new SoundPlayer(MathQuiz.ProgDire + "win.wav");
         List<string> icons = new List<string>()
         {
             "!", "!", "N", "N", ",", ",", "k", "k",
@@ -99,6 +101,7 @@ namespace quiz
                 }
             }
             timer2.Stop();
+            Won.Play();
             MessageBox.Show(String.Format("You matched all the icons! \nthat took you {0} seconds", timeSpent), "Congratulations");
             Close();
         }
