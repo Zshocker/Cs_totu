@@ -16,9 +16,10 @@ namespace quiz
     {
         int timeLeft;
         Random Ran = new Random();
-        SoundPlayer FinalGame = new SoundPlayer(Directory.GetCurrentDirectory()+"\\final.wav");
-        SoundPlayer Lost = new SoundPlayer(Directory.GetCurrentDirectory() + "\\loss.wav");
-        SoundPlayer Won = new SoundPlayer(Directory.GetCurrentDirectory() + "\\win.wav");
+        static string ProgDire = Directory.GetCurrentDirectory().Replace("bin\\Debug", "");
+        SoundPlayer FinalGame = new SoundPlayer(ProgDire + "final.wav");
+        SoundPlayer Lost = new SoundPlayer(ProgDire + "loss.wav");
+        SoundPlayer Won = new SoundPlayer(ProgDire + "win.wav");
         public MathQuiz()
         {
             InitializeComponent();
