@@ -15,8 +15,6 @@ namespace quiz
         public PictureV()
         {
             InitializeComponent();
-            new MathQuiz().Show();
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MatchingGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchingGame.Designer.cs">
+      <DependentUpon>MatchingGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="MathQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MatchingGame.resx">
+      <DependentUpon>MatchingGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MathQuiz.resx">
       <DependentUpon>MathQuiz.cs</DependentUpon>
     </EmbeddedResource>

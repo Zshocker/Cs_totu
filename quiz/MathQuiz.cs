@@ -23,6 +23,8 @@ namespace quiz
         public MathQuiz()
         {
             InitializeComponent();
+            new PictureV().Show();
+            new MatchingGame().Show();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

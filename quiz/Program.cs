@@ -16,7 +16,9 @@ namespace quiz
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PictureV());
+            Application.Run(new MathQuiz());
+            //Application.Run(new PictureV());
+            //Application.Run(new MatchingGame());
         }
     }
 }
